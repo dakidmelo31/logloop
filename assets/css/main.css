@@ -1,0 +1,269 @@
+@charset "UTF-8";
+html, html *
+{
+    padding: 0;
+    margin: 0;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    box-sizing: border-box;
+}
+html, body
+{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background: #ffffff url("../img/image_3.jpg") no-repeat center center fixed;
+    background-size: 100%;
+}
+*
+{
+    transition: all .3s ease-in;
+}
+::-webkit-scrollbar
+{
+    width: 6px;
+    background: deepskyblue;
+}
+::-webkit-scrollbar-track-piece
+{
+    border: 4px solid #eaeaea;
+}
+::-webkit-scrollbar-thumb
+{
+    background: #000;
+}
+.main-page-overlay
+{
+    min-width: 100vw;
+    min-height: 100vh;
+    background: #eaeaea66;
+}
+section#header_section
+{
+    position: fixed;
+    display: flex;
+    width: 240px;
+    height: 100vh;
+    max-width: 10000px;
+    background: #eaeaea;
+    box-shadow: 4px 4px 5px 1px #00000033;
+}
+div#header_div
+{
+    width: 100%;
+    height: 100%;
+    background-size: 1920px 768px;
+}
+div#header_div div#header_div_overlay
+{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top , #00000000, #00000000);
+}
+section#nav_section
+{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    z-index: 2;
+    background: #eaeaea00;
+}
+section#nav_section nav#main_nav
+{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+}
+section#nav_section nav#main_nav a
+{
+    padding: 25px 15px;
+    margin: 0;
+    color: deepskyblue;
+    font-weight: lighter;
+    background: #fff;
+}
+section#nav_section nav#main_nav a:hover
+{
+    background: #eaeaea;
+    color: #fe6f00;
+}
+body
+{
+    height: 180vw;
+}
+
+.you
+{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 28px;
+    height: 28px;
+    padding: 1px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 4px 4px 5px  #33333355;
+}
+a.you:hover
+{
+    background: #fff;
+
+}
+div.menu-block-section
+{
+    display: flex;
+    flex-flow: column nowrap;
+}
+ul.submenu li
+{
+    transition:margin .2s ease-in;
+    display: none;
+}
+ul.submenu:hover li
+{
+    transition:all .2s ease-in;
+    display: flex;
+}
+div.main-dashboard
+{
+    display: flex;
+    width: 100vw;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+    justify-self: flex-end;
+}
+div.stats
+{
+    margin-top: 80px;
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    flex-flow: row nowrap;
+    background: yellow;
+    padding: 15px;
+    align-items: center;
+}
+div.stats > div
+{
+    background: deepskyblue;
+    color: #fff;
+    border-radius: 20px;
+    box-shadow: 5px 3px 10px 1px #33333333;
+    background-size: 100%;
+    padding: 1em;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    align-items: stretch;
+}
+div.stats > div span:first-of-type
+{
+    color: yellow;
+    font-size: 2.3em;
+}
+* > div.online-block
+{
+    border-radius: 20px;
+    padding: 10px;
+    background: #ffffff;
+    display: inline-flex;
+    overflow-x: scroll;
+    max-width: 350px;
+
+}
+div.online-block:hover
+{
+    box-shadow: 3px 5px 10px 1px #55555533;
+}
+div.online-block:hover >div
+{
+}
+span.name
+{
+    opacity: .3;
+}
+
+div.online-block div.user_circle:hover span.name
+{
+    opacity: 1;
+}
+div.online-block div.user_circle:hover
+{
+    color: #ffffff;
+    border-radius: 10px;
+    background: deepskyblue;
+}
+.online
+{
+    margin:  0 auto;
+    width: 16px;
+}
+div.online-block div.user_circle
+{
+    font-weight: bolder;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all .2s ease-out;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1px 10px;
+    width: 100px;
+    border-radius: 40px;
+    margin: 0 5px;
+    box-shadow: 3px 5px 10px 1px #55555533;
+}
+
+div.online-block > div >img
+{
+    width: 32px;
+    object-fit: contain;
+}
+
+div.online-block::-webkit-scrollbar-thumb
+{
+    background: blue;
+    width: 2px;
+}
+
+div.online-block::-webkit-scrollbar-track
+{
+    background: red;
+    width: 1px;
+}
+div.online-block::-webkit-scrollbar-track
+{
+    background: transparent;
+}
+div.online-block::-webkit-scrollbar
+{
+    background: transparent;
+    width: 1px;
+    border: none;
+    outline: none;
+}
+
+/* Mobile Viewports
+
+ */
+
+@media screen and (max-width: 414px) {
+    section#header_section
+    {
+        position: fixed;
+        display: flex;
+        width: 80vw;
+        left: -80vw;
+        min-height: 100vh;
+        max-width: 10000px;
+        background: #eaeaea;
+        box-shadow: 4px 4px 5px 1px #00000033;
+    }
+    body{
+        background: #ffffff url("../img/iphone (1).jpg") no-repeat center center;
+        background-size: 100%;
+    }
+}
